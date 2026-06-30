@@ -25,7 +25,7 @@ chromium based browser extension for web analytics inspection
 a tool for rendering tree based data structures
 based of a family tree
 
-### ttrpg.anltx.xyz - table-top role play game
+### ttapp.anltx.xyz - table-top role play game
 
 a helper system for role play games masters
 

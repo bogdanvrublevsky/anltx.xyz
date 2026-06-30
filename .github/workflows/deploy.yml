@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ]  # Триггер на пуш в ветку main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build deployment structure
+        run: |
+          mkdir -p _site
+          
+          echo "📁 copy main"
+          cp -r main/* _site/ 2>/dev/null || echo "⚠️ main is empty or does not exist"
+          
+          echo "📁 copy ttapp to /ttapp"
+          cp -r ttapp _site/ttapp 2>/dev/null || echo "⚠️ ttapp is empty or does not exist"
+          
+          ls -la _site/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          force_orphan: true
