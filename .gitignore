@@ -1,5 +1,6 @@
-wip
+ignore
 export-project.py
+.gitignore
 
 # Зависимости (пакеты)
 node_modules/

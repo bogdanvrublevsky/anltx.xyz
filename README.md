@@ -32,5 +32,3 @@ a helper system for role play games masters
 ### sgame.anltx.xyz - space game
 
 a web base multiplayer role play game built around analytics in space western theme
-
-### wip - work in progress - do not sync into git
