@@ -1,0 +1,77 @@
+wip
+export-project.py
+
+# Зависимости (пакеты)
+node_modules/
+vendor/
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Файлы сборки и дистрибутивы
+dist/
+build/
+out/
+target/
+*.exe
+*.dll
+*.so
+*.dylib
+*.jar
+*.war
+*.ear
+
+# IDE и редакторы (VS Code, IntelliJ, Sublime и др.)
+.vscode/
+.idea/
+*.iml
+.vs/
+.sublime-project
+.sublime-workspace
+
+# Файлы окружения и секреты
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+*.p12
+.secrets
+credentials.json
+
+# Отчёты о покрытии тестов
+coverage/
+.nyc_output/
+*.lcov
+
+# Файлы зависимостей (для некоторых языков)
+package-lock.json
+yarn.lock
+composer.lock
+Gemfile.lock
+Pipfile.lock
+poetry.lock
+Cargo.lock
+
+# Системные файлы
+*.bak
+*.orig
+*.rej
+*.patch
