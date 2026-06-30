@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anltx.xyz · Data-driven подход</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <div style="position:sticky; top: 0; z-index: 100;">
+        <header>
+            <div class="container header-inner">
+                <a href="#" class="logo">Anltx.xyz · Data<span>&</span>Decisions</a>
+                <div class="nav-links">
+                    <a href="#">Главная</a>
+                    <a href="#blog">Блог</a>
+                    <a href="#portfolio">Проекты</a>
+                    <a href="#about">Обо мне</a>
+                </div>
+            </div>
+        </header>
+        <div class="header-sub">
+            <div class="marquee-content">
+                <p>Сайт находится в разработке. Если увидите ошибку или проблему, пожалуйста, сообщите об этом в <a
+                        href="https://t.me/bmr2azld3djj">telegram</a> |</p>
+                <p>Сайт находится в разработке. Если увидите ошибку или проблему, пожалуйста, сообщите об этом в <a
+                        href="https://t.me/bmr2azld3djj">telegram</a> |</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <span class="hero-badge">🔍 Data-driven подход</span>
+            <h1>
+                Превращаю хаос в цифрах<br>
+                в <span class="highlight">чёткие решения</span>
+            </h1>
+            <p class="hero-sub">
+                Аналитика — это искусство задавать правильные вопросы.<br>
+                Я перевожу сложный SQL на человеческий язык.
+            </p>
+            <div class="hero-code">
+                <span>import</span> portfolio
+            </div>
+            <div class="hero-cta">
+                <a href="#portfolio" class="btn-primary">Смотреть проекты</a>
+                <a href="#footer" class="btn-outline">Обсудить задачу</a>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+        <style>
+            .hero-bg {
+                background-image: url('hero-bg.png');
+                background-size: cover;
+                background-position: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+        </style>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about">
+        <div class="container">
+            <div class="section-label">Обо мне</div>
+            <div class="section-title">Кто я и как работаю</div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p style="margin-bottom: 16px;">
+                        <strong>Я не верю в интуицию в бизнесе.</strong> Я верю в распределения, корреляции и проверку
+                        гипотез.
+                        Мой суперскилл — переводить сложную аналитику на язык, на котором топ-менеджеры принимают верные
+                        решения.
+                    </p>
+                    <p>
+                        Ежедневно я работаю с большими данными, строю дашборды и ищу точки роста.
+                        Моя миссия — <strong>убирать шум и оставлять только суть.</strong>
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">лет в аналитике</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">120+</div>
+                        <div class="stat-label">дашбордов создано</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">87%</div>
+                        <div class="stat-label">гипотез подтверждено</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">чистоты данных</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== BLOG ==================== -->
+    <section id="blog">
+        <div class="container">
+            <div class="section-label">Блог</div>
+            <div class="section-title">Заметки аналитика</div>
+            <p class="section-desc">
+                Опыт без воды, только данные и инсайты.
+            </p>
+            <style>
+                .section-filter {
+                    cursor: pointer;
+                    color: #475569;
+                    transition: color 0.2s;
+                    border-radius: 4px;
+                    padding: 4px 8px;
+                    background: #e2e8f0;
+                    display: inline-block;
+                }
+
+                .section-filter:hover {
+                    color: #2563eb;
+                }
+            </style>
+            <div>
+                <span class="section-filter">Все</span>
+                <span class="section-filter">BI</span>
+                <span class="section-filter">Продукт</span>
+                <span class="section-filter">Кейс</span>
+                <span class="section-filter">Техника</span>
+                <span class="section-filter">Разное</span>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-tag">📊 Кейс</div>
+                    <h3>Как мы нашли аномалию в воронке</h3>
+                    <p>История о том, как баг в трекере «съедал» 15% конверсии и что мы с этим сделали.</p>
+                    <div class="blog-meta">26 июня 2026 · 6 мин чтения</div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-tag">📈 Дашборды</div>
+                    <h3>Tableau vs Power BI: мой выбор</h3>
+                    <p>Сравнение инструментов на реальных задачах: где быстрее, а где красивее.</p>
+                    <div class="blog-meta">18 июня 2026 · 4 мин чтения</div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-tag">🧠 Мышление</div>
+                    <h3>Почему чистка данных — это 80% успеха</h3>
+                    <p>Чек-лист, который я использую перед любым анализом, чтобы не наврать себе.</p>
+                    <div class="blog-meta">10 июня 2026 · 5 мин чтения</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO ==================== -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-label">Портфолио</div>
+            <div class="section-title">Проекты в действии</div>
+            <p class="section-desc">
+                Вот что скрывалось в ваших логах. Каждый проект — результат ежедневной работы с данными.
+            </p>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="label">🛒 E-commerce</div>
+                    <h3>Сегментация клиентов</h3>
+                    <p>Кластеризация 50 000+ пользователей по поведению. Внедрили персонализированные коммуникации.</p>
+                    <span class="result">+18% повторных покупок</span>
+                </div>
+                <div class="portfolio-item">
+                    <div class="label">📊 BI / Дашборд</div>
+                    <h3>Операционная панель для логистики</h3>
+                    <p>Собрал в одном окне 12 ключевых метрик. Сократил время еженедельной отчетности с 3 часов до 20
+                        минут.</p>
+                    <span class="result">экономия 20+ часов в месяц</span>
+                </div>
+                <div class="portfolio-item">
+                    <div class="label">🧪 A/B тестирование</div>
+                    <h3>Редизайн карточки товара</h3>
+                    <p>Спроектировал тест, рассчитал размер выборки, проанализировал результаты. Новая версия победила.
+                    </p>
+                    <span class="result">+12% CR</span>
+                </div>
+                <div class="portfolio-item">
+                    <div class="label">📉 Финансы</div>
+                    <h3>Прогноз оттока клиентов</h3>
+                    <p>Построил модель Churn Prediction на основе исторических данных. Точно определил группу риска.</p>
+                    <span class="result">точность 94%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer id="footer">
+        <div class="container footer-inner">
+            <div>
+                <div class="footer-logo">Data<span>&</span>Decisions</div>
+                <div class="footer-tagline">
+                    Всегда открыт к гипотезам и новым задачам.<br>
+                    Данные не врут, но я проверяю ещё раз.
+                </div>
+            </div>
+            <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
+                <a href="https://t.me/bmr2azld3djj"
+                    style="color: #94a3b8; text-decoration: none; font-weight: 500;">telegram</a>
+                <a href="https://github.com/bogdanvrublevsky"
+                    style="color: #94a3b8; text-decoration: none; font-weight: 500;">github</a>
+                <a href="https://www.linkedin.com/in/bogdan-vrublevsky/"
+                    style="color: #94a3b8; text-decoration: none; font-weight: 500;">linkedin</a>
+                <a href="#" class="footer-cta">Нужен свежий взгляд?</a>
+            </div>
+        </div>
+        <div class="container"
+            style="margin-top: 32px; border-top: 1px solid #1e293b; padding-top: 24px; font-size: 14px; color: #64748b;">
+            © 2026 Data & Decisions · Сделано с чистыми данными
+        </div>
+    </footer>
+
+</body>
+
+</html>

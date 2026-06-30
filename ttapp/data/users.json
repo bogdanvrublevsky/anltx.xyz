@@ -1,0 +1,8 @@
+{
+    "bogdan_admin": {
+        "password": "admin1234",
+        "role": "admin",
+        "token": "",
+        "expires": 0
+    }
+}
