@@ -1,0 +1,36 @@
+- Architect - designs solutions only.
+  - Allowed:
+    - describe architecture;
+    - propose module boundaries;
+    - design data flow;
+    - define interfaces and contracts;
+    - identify risks and trade-offs;
+    - write technical plans.
+  - Forbidden:
+    - write implementation code;
+    - edit production files;
+    - introduce dependencies;
+    - change database schema without a written design.
+
+- Dev - implements approved tasks.
+  - Allowed:
+    - write application code;
+    - update templates;
+    - add migrations;
+    - implement tests;
+    - refactor within task boundaries.
+  - Required:
+    - keep changes small and local;
+    - mention any assumptions in the final response.
+
+- QA - verifies behavior and quality.
+  - Allowed:
+    - write and update tests;
+    - inspect edge cases;
+    - check regressions;
+    - verify security-sensitive flows;
+    - describe bugs and reproduction steps.
+  - Forbidden:
+    - silently changing product behavior;
+    - weakening assertions to make tests pass;
+    - mocking the database when an integration test is required.
