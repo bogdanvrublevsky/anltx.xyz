@@ -4,7 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anltx.xyz · Data-driven подход</title>
+    <meta name="description"
+        content="ANLTX — современные технологические решения, инновационные подходы и последние новости.">
+    <meta name="robots" content="index, follow">
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="Главная страница сайта ANLTX | Инновации и технологии">
+    <meta property="og:site_name" content="ANLTX">
+    <meta property="og:description"
+        content="ANLTX — современные технологические решения, инновационные подходы и последние новости.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anltx.xyz/">
+    <meta property="og:image" content="https://anltx.xyz/images/logo-preview.jpg">
+    <meta property="og:locale" content="ru_RU">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#334455">
+
+    <link rel="alternate" hreflang="ru" href="https://anltx.xyz/">
+    <!-- <link rel="alternate" hreflang="en" href="https://anltx.xyz/en/"> -->
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Главная страница сайта ANLTX | Инновации и технологии">
+    <meta name="twitter:description"
+        content="ANLTX — современные технологические решения, инновационные подходы и последние новости.">
+    <meta name="twitter:image" content="https://anltx.xyz/images/twitter-preview.jpg">
+    <meta name="twitter:image:alt" content="Главная страница ANLTX">
+    <meta name="twitter:url" content="https://anltx.xyz/">
+
+    <link rel="canonical" href="https://anltx.xyz/">
+
+    <title>ANLTX — аналитика, разработка и технологические решения</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -12,20 +43,31 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K9R6XK6R');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
-
     <!-- ==================== HEADER ==================== -->
-    <div style="position:sticky; top: 0; z-index: 100;">
+    <div id="header">
         <header>
             <div class="container header-inner">
-                <a href="#" class="logo">Anltx.xyz · Data<span>&</span>Decisions</a>
+                <a href="#" class="logo">Anltx.xyz ·
+
+                </a>
                 <div class="nav-links">
-                    <a href="#">Главная</a>
                     <a href="#blog">Блог</a>
                     <a href="#portfolio">Проекты</a>
-                    <a href="#about">Обо мне</a>
+                    <a href="#about">Кто я</a>
                 </div>
             </div>
         </header>
@@ -42,7 +84,27 @@
     <!-- ==================== HERO ==================== -->
     <section class="hero">
         <div class="container hero-grid">
-            <span class="hero-badge">🔍 Data-driven подход</span>
+            <div>
+                <span class="hero-badge">
+                    <i data-lucide="database"></i>
+                    Data
+                </span>
+
+                <span class="hero-badge">
+                    <i data-lucide="table-properties"></i>
+                    SQL
+                </span>
+
+                <span class="hero-badge">
+                    <i data-lucide="chart-column"></i>
+                    BI
+                </span>
+
+                <span class="hero-badge">
+                    <i data-lucide="workflow"></i>
+                    ETL
+                </span>
+            </div>
             <h1>
                 Превращаю хаос в цифрах<br>
                 в <span class="highlight">чёткие решения</span>
@@ -60,19 +122,6 @@
             </div>
         </div>
         <div class="hero-bg"></div>
-        <style>
-            .hero-bg {
-                background-image: url('hero-bg.png');
-                background-size: cover;
-                background-position: center;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                z-index: -1;
-            }
-        </style>
     </section>
 
     <!-- ==================== ABOUT ==================== -->
@@ -82,7 +131,7 @@
             <div class="section-title">Кто я и как работаю</div>
             <div class="about-grid">
                 <div class="about-text">
-                    <p style="margin-bottom: 16px;">
+                    <p>
                         <strong>Я не верю в интуицию в бизнесе.</strong> Я верю в распределения, корреляции и проверку
                         гипотез.
                         Мой суперскилл — переводить сложную аналитику на язык, на котором топ-менеджеры принимают верные
@@ -123,21 +172,6 @@
             <p class="section-desc">
                 Опыт без воды, только данные и инсайты.
             </p>
-            <style>
-                .section-filter {
-                    cursor: pointer;
-                    color: #475569;
-                    transition: color 0.2s;
-                    border-radius: 4px;
-                    padding: 4px 8px;
-                    background: #e2e8f0;
-                    display: inline-block;
-                }
-
-                .section-filter:hover {
-                    color: #2563eb;
-                }
-            </style>
             <div>
                 <span class="section-filter">Все</span>
                 <span class="section-filter">BI</span>
@@ -220,22 +254,21 @@
                     Данные не врут, но я проверяю ещё раз.
                 </div>
             </div>
-            <div style="display: flex; gap: 16px; align-items: center; flex-wrap: wrap;">
-                <a href="https://t.me/bmr2azld3djj"
-                    style="color: #94a3b8; text-decoration: none; font-weight: 500;">telegram</a>
-                <a href="https://github.com/bogdanvrublevsky"
-                    style="color: #94a3b8; text-decoration: none; font-weight: 500;">github</a>
-                <a href="https://www.linkedin.com/in/bogdan-vrublevsky/"
-                    style="color: #94a3b8; text-decoration: none; font-weight: 500;">linkedin</a>
+            <div class="footer-contacts">
+                <a href="https://t.me/bmr2azld3djj">telegram</a>
+                <a href="https://github.com/bogdanvrublevsky">github</a>
+                <a href="https://www.linkedin.com/in/bogdan-vrublevsky/">linkedin</a>
                 <a href="#" class="footer-cta">Нужен свежий взгляд?</a>
             </div>
         </div>
-        <div class="container"
-            style="margin-top: 32px; border-top: 1px solid #1e293b; padding-top: 24px; font-size: 14px; color: #64748b;">
+        <div class="container footer-copyright">
             © 2026 Data & Decisions · Сделано с чистыми данными
         </div>
     </footer>
-
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 
 </html>
