@@ -26,6 +26,10 @@
     border: none;
 }
 
+html {
+    scroll-padding-top: var(--header-height, 80px);
+}
+
 body {
     font-family: var(--font-main);
     background-color: var(--color-background);

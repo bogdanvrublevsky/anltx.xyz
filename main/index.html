@@ -54,6 +54,15 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-K9R6XK6R');</script>
     <!-- End Google Tag Manager -->
+    <script>
+        const header = document.querySelector('header');
+        function setHeaderHeightVar() {
+            document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+        }
+        setHeaderHeightVar();
+        window.addEventListener('resize', setHeaderHeightVar);
+        new ResizeObserver(setHeaderHeightVar).observe(header);
+    </script>
 </head>
 
 <body>
@@ -61,9 +70,7 @@
     <div id="header">
         <header>
             <div class="container header-inner">
-                <a href="#" class="logo">Anltx.xyz ·
-
-                </a>
+                <a href="#" class="logo">Anltx.xyz</a>
                 <div class="nav-links">
                     <a href="#blog">Блог</a>
                     <a href="#portfolio">Проекты</a>
@@ -121,7 +128,6 @@
                 <a href="#footer" class="btn-outline">Обсудить задачу</a>
             </div>
         </div>
-        <div class="hero-bg"></div>
     </section>
 
     <!-- ==================== ABOUT ==================== -->
@@ -143,6 +149,7 @@
                     </p>
                 </div>
                 <div class="about-stats">
+                    <div class="hero-bg"></div>
                     <div class="stat-item">
                         <div class="stat-number">5+</div>
                         <div class="stat-label">лет в аналитике</div>

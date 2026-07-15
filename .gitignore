@@ -1,4 +1,4 @@
-ignore
+ignore*
 export-project.py
 .gitignore
 
