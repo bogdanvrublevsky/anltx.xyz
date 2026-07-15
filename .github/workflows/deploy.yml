@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]  # Триггер на пуш в ветку main
+    branches: [ "main" ]
 
 jobs:
   deploy:
@@ -31,3 +31,4 @@ jobs:
           publish_dir: ./_site
           publish_branch: gh-pages
           force_orphan: true
+          cname: anltx.xyz
