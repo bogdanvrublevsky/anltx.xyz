@@ -57,22 +57,24 @@ target/
 .secrets
 credentials.json
 
+# Cloudflare Workers (Wrangler)
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# Astro
+.astro/
+
 # Отчёты о покрытии тестов
 coverage/
 .nyc_output/
 *.lcov
-
-# Файлы зависимостей (для некоторых языков)
-package-lock.json
-yarn.lock
-composer.lock
-Gemfile.lock
-Pipfile.lock
-poetry.lock
-Cargo.lock
 
 # Системные файлы
 *.bak
 *.orig
 *.rej
 *.patch
+
+# Claude Code — личные настройки, не для коммита
+.claude/settings.local.json
