@@ -25,19 +25,6 @@ __pycache__/
 Thumbs.db
 desktop.ini
 
-# Файлы сборки и дистрибутивы
-dist/
-build/
-out/
-target/
-*.exe
-*.dll
-*.so
-*.dylib
-*.jar
-*.war
-*.ear
-
 # IDE и редакторы (VS Code, IntelliJ, Sublime и др.)
 .vscode/
 .idea/
