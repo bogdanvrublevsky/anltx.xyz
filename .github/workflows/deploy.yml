@@ -21,7 +21,14 @@ jobs:
           
           echo "📁 copy ttapp to /ttapp"
           cp -r ttapp _site/ttapp 2>/dev/null || echo "⚠️ ttapp is empty or does not exist"
-          
+
+          echo "📁 copy cv to /cv"
+          mkdir -p _site/cv/en _site/cv/ru
+          cp -r cv/build/en/* _site/cv/en/ 2>/dev/null || echo "⚠️ cv/build/en is empty or does not exist"
+          cp -r cv/build/ru/* _site/cv/ru/ 2>/dev/null || echo "⚠️ cv/build/ru is empty or does not exist"
+          find cv/build -maxdepth 1 -type f -exec cp {} _site/cv/en/ \; 2>/dev/null
+          find cv/build -maxdepth 1 -type f -exec cp {} _site/cv/ru/ \; 2>/dev/null
+
           ls -la _site/
 
       - name: Deploy to GitHub Pages
