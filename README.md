@@ -1,6 +1,6 @@
 # anltx.xyz repository description
 
-an analytics portfolio website platform hosted on anltx.xyz
+monorepo for projects of the anltx.xyz team
 
 ## main sections
 
