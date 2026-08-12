@@ -14,15 +14,6 @@
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-K9R6XK6R');</script>
-    <script>
-        const header = document.querySelector('header');
-        function setHeaderHeightVar() {
-            document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
-        }
-        setHeaderHeightVar();
-        window.addEventListener('resize', setHeaderHeightVar);
-        new ResizeObserver(setHeaderHeightVar).observe(header);
-    </script>
 </head>
 
 <body>
@@ -93,7 +84,7 @@
             </article>
 
             <article>
-                <h3><span>Веб-аналитик (частичная занятость)</span><span><a
+                <h3><span>Веб-аналитик (частичная занятость)</span><span><a target="_blank"
                             href="https://tripsider.com">Tripsider</a></span></h3>
                 <small><span>Окт 2022 - Дек 2023</span><span>США</span><span>Удалённо</span></small>
                 <ul>
@@ -214,6 +205,16 @@
             </dl>
         </section>
     </aside>
+
+    <script>
+        const header = document.querySelector('header');
+        function setHeaderHeightVar() {
+            document.documentElement.style.setProperty('--header-height', `${header.offsetHeight}px`);
+        }
+        setHeaderHeightVar();
+        window.addEventListener('resize', setHeaderHeightVar);
+        new ResizeObserver(setHeaderHeightVar).observe(header);
+    </script>
 </body>
 
 </html>
