@@ -18,7 +18,7 @@ process.stdin.on("end", () => {
   const filePath = input?.tool_input?.file_path || "";
   const normalized = filePath.replace(/\\/g, "/").toLowerCase();
 
-  const guarded = ["dlext", "ttapp", "sgame", "treev"];
+  const guarded = ["dlext", "ttapp", "treev"];
   const hit = guarded.find((name) =>
     new RegExp(`(^|/)${name}(/|$)`).test(normalized)
   );
@@ -26,7 +26,7 @@ process.stdin.on("end", () => {
   if (hit) {
     process.stderr.write(
       `Blocked by scope-guard: "${filePath}" is inside "${hit}/", which is outside the scope of CLAUDE.md ` +
-        `(see docs/adr/0006-monorepo-scope-boundary.md). Stop and ask the user for explicit confirmation before editing this path.`
+      `(see docs/adr/0006-monorepo-scope-boundary.md). Stop and ask the user for explicit confirmation before editing this path.`
     );
     process.exit(2);
   }
